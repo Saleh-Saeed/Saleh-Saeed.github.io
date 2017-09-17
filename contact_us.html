@@ -2,9 +2,12 @@
 
 	<head>
 		<title>VeggeOnline</title>
+
+		
 	</head>
 
 	<body>
+		<form action = "">
 		<!-- this is the title div -->
 		<div>
 		
@@ -88,19 +91,19 @@
 					<font size = 4 style = "color:white"> Last Name </font></br></br>
 					<font size = 4 style = "color:white"> Email </font></br></br></br></br>
 					<font size = 4 style = "color:white"> Comment Box </font></br></br></br></br>
-					<input type = "radio" name = "question"/><font size = 3 style = "color:white"> Question </font></br>
-					<input type = "radio" name = "problem"/><font size = 3 style = "color:white"> Problem </font></br>
-					<input type = "radio" name = "order"/><font size = 3 style = "color:white"> Order Status </font></br></br>
-					<input type = "button" name = "submit" value = "Submit"/>
-					<input type = "button" name = "reset" value = "Reset"/>
+						<input type = "radio" id = "radioQue" name = "group1" value = "question"><font size = 3 style = "color:white"> Question </font></br>
+						<input type = "radio" id = "radioPro" name = "group1" value = "problem"><font size = 3 style = "color:white"> Problem </font></br>
+						<input type = "radio" id = "radioOrd" name = "group1" value =><font size = 3 style = "color:white"> Order Status </font></br></br>
+					<input type = "submit" name = "submit" value = "Submit"/>
+					<input type = "button" id = "btnReset" name = "reset" value = "Reset"/>
 				</div>
 
 				<div style = "height:420px; width:70%; float:left">
-					<input type = "text" name = "fname" style = "padding-top:15px; background-color: rgba(0,0,0,0.1);; border:none; color:white"/></br></br>
-					<input type = "text" name = "fname" style = "padding-top:15px;  background-color: rgba(0,0,0,0.1);; border:none; color:white"/></br></br>
-					<input type = "text" name = "fname" style = "padding-top:15px;  background-color: rgba(0,0,0,0.1);; border:none; color:white" /></br>
+					<input type = "text" id = "txtFirstName"  style = "padding-top:15px; background-color: rgba(0,0,0,0.1);; border:none; color:white"/></br></br>
+					<input type = "text" id = "txtLastName"  style = "padding-top:15px;  background-color: rgba(0,0,0,0.1);; border:none; color:white"/></br></br>
+					<input type = "text" id = "txtEmail"  style = "padding-top:15px;  background-color: rgba(0,0,0,0.1);; border:none; color:white" /></br>
 	
-					</br><textarea rows = "4" cols = "32" style = "padding-top:15px;  background-color: rgba(0,0,0,0.1); border:none; color:white" /></textarea>
+					</br><textarea rows = "4" cols = "32" id = "txtComment" style = "padding-top:15px;  background-color: rgba(0,0,0,0.1); border:none; color:white" /></textarea>
 				</div>
 			</div>
 
@@ -119,6 +122,19 @@
 		</div></br>
 
 			<center><a href = "index.html" >Home</a></center>
+
+		<script>
+			document.getElementById("btnReset").addEventListener("click", function(){
+    				document.getElementById("txtFirstName").value = "";
+    				document.getElementById("txtLastName").value = "";
+    				document.getElementById("txtEmail").value = "";
+    				document.getElementById("txtComment").value = "";
+				document.getElementById("radioQue").checked = false;
+				document.getElementById("radioPro").checked = false;
+				document.getElementById("radioOrd").checked = false;
+			});
+		</script>
+		</form>
 	</body>
 
 </html>
