@@ -2,89 +2,90 @@
 
 	<head>
 		<title>VeggeOnline</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body>
 		<!-- this is the title div -->
-		<div>
+		<div class = "header">
 		
 			<!-- this div is for displaying the title image -->			
-			<div style = "background-color:#ff6600; width:150px; float:left">
-				<img src = "images/title.png" style = "width:150px; height:150px">
+			<div style = "float:left">
+				<img src = "images/title.png" class = "titleImage">
 			</div>
 
-			<div style = "background-color:#ff6600; height:150px">
-				<div style = "height:30px"></div>
+			<div id = "titleDiv">
+				<div id = "title"></div>
 				<center><font size = 10>VeggeOnline</font></center>
 			</div>
 
 		</div>
 
 		<!-- this is the side pane -->
-		<div style = "background-color:#ff8533; height:520px; width:20%; float:left">
+		<div class = "leftNav">
 			
-			<div style = "height:5px;"></div>
+			<div class = "spacing"></div>
 			<!-- this is spacing between the top and side pane -->			
-			<div style = "background-color:#ff8533;">
-				<center><img src = "images/menu.png" style = "width:150px; height:150px"></center>
+			<div>
+				<center><img src = "images/menu.png" class = "titleImage"></center>
 			</div>
 
-			<div style = "height:5px;"></div>
+			<div class = "spacing"></div>
 
-			<div style = "height:1px; background-color:#ff6600"></div>
+			<div class = "separate"></div>
 
-			<div style = "background-color:#ff8533; width:255px; height:50px; ">
-				<center><a href = "bulb.html"> <font size = 5>Bulbs</font> </a> </center>
-			</div>
+			<a href = "bulb.html"><div class = "button">
+				<center><font size = 5>Bulbs</font></center>
+			</div></a>
 			
-			<div style = "height:1px; background-color:#ff6600"></div>
+			<div class = "separate"></div>
 
-			<div style = "background-color:#ff8533; width:255px; height:50px;">
-				<center><a href = "fruit.html"> <font size = 5>Fruits</font> </a> </center>
-			</div>
+			<a href = "fruit.html"><div class = "button">
+				<center><font size = 5>Fruits</font> </center>
+			</div></a>
 
-			<div style = "height:1px; background-color:#ff6600"></div>
+			<div class = "separate"></div>
 
-			<div style = "background-color:#ff8533; width:255px; height:50px;">
-				<center><a href = "fungi.html"> <font size = 5>Fungi</font> </a> </center>
-			</div>
+			<a href = "fungi.html"><div class = "button">
+				<center> <font size = 5>Fungi</font>  </center>
+			</div></a>
 
-			<div style = "height:1px; background-color:#ff6600"></div>
+			<div class = "separate"></div>
 
-			<div style = "background-color:#ff8533; width:255px; height:50px;">
-				<center> <a href = "leaves.html"> <font size = 5>Leaves</font> </a> </center>
-			</div>
+			<a href = "leaves.html"><div class = "button">
+				<center>  <font size = 5>Leaves</font>  </center>
+			</div></a>
 
-			<div style = "height:1px; background-color:#ff6600"></div>
+			<div class = "separate"></div>
 
-			<div style = "background-color:#ff8533; width:255px; height:50px;">
-				<center><a href = "roots.html"> <font size = 5>Roots</font> </a> </center>
-			</div>
+			<a href = "roots.html"><div class = "button">
+				<center> <font size = 5>Roots</font>  </center>
+			</div></a>
 
-			<div style = "height:1px; background-color:#ff6600"></div>
+			<div class = "separate"></div>
 
-			<div style = "background-color:#ff8533; width:255px; height:50px;">
-				<center><a href = "tubers.html"> <font size = 5>Tubers</font> </a> </center>
-			</div>
+			<a href = "tubers.html"><div class = "button">
+				<center> <font size = 5>Tubers</font>  </center>
+			</div></a>
 
-			<div style = "height:1px; background-color:#ff6600"></div>
+			<div class = "separate"></div>
 
-			<div style = "background-color:#ff8533; width:255px; height:50px;">
-				<center><a href = "contact_us.html"> <font size = 5>Contact Us</font> </a> </center>
-			</div>
+			<a href = "contact_us.html"><div class = "button">
+				<center> <font size = 5>Contact Us</font>  </center>
+			</div></a>
 
 		</div>
 
 		<!-- this is the center div -->
-		<div style = "background-color:#ffa366; float:left; height:520px; width:80%">
-			<div style = "height:100px; background-color:#ffa366"></div>
-			<div style = "height:420px; width:10%; background-color:#ffa366; float:left"></div>
+		<div class = "centerNav">
+			<div style = "height:100px;"></div>
+			<div style = "height:420px; width:10%; float:left"></div>
 
-			<div style = "float:left; width:40%">
+			<div id = "centerImage">
 				<img src = "images/center.jpg" style = "width:350px; height:350px">
 			</div>
 
-			<div style = "float:left; background-color:#ffa366; height:350px; width:35%">
+			<div id = "description">
 				<center><font size = 6 style = "color:#ffd11a">OUR PRODUCTS</font></br></center>
 				<font size = 3 style = "color:white"> Fruit & Veg Boxes- save time & money, Fruit& Cheese Platters made fresh in store, Fresh Flowers hand picked from the flower markets.We also stock an extensive range of South Australian Gourmet foods, organics, Fresh Meals and health foods. Other grocery items are available; visit the Pantry for condiments, dried fruit & nuts, oils, beverages, snacks, pasta& cereals.Sweet treats can be found in the Confectionery department. Cakes, bread, biscuits& other baked goodies are available from our Bakery. Fresh yoghurts & tasty cheeses can be found in the Dairy section. </font>
 			</div>
@@ -92,7 +93,7 @@
 		</div>
 
 		<!-- this is the footer -->
-		<div style = "background-color:#ff6600; width:100%; height:20px;">
+		<div id = "footer">
 			<center><a href = "index.html" >Home</a></center>
 		</div>
 
