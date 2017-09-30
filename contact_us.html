@@ -22,6 +22,7 @@
 
 		</div>
 
+		
 		<!-- this is the side pane -->
 		<div class = "leftNav">
 			
@@ -36,72 +37,88 @@
 			<div class = "separate"></div>
 
 			<a href = "bulb.html"><div class = "button">
-				<center><font size = 5>Bulbs</font></center>
+				<div class = "inButton"></div>
+				<center><font size = 4>Bulbs</font></center>
 			</div></a>
 			
 			<div class = "separate"></div>
 
 			<a href = "fruit.html"><div class = "button">
-				<center><font size = 5>Fruits</font> </center>
+				<div class = "inButton"></div>
+				<center><font size = 4>Fruits</font> </center>
 			</div></a>
 
 			<div class = "separate"></div>
 
 			<a href = "fungi.html"><div class = "button">
-				<center> <font size = 5>Fungi</font>  </center>
+				<div class = "inButton"></div>
+				<center> <font size = 4>Fungi</font>  </center>
 			</div></a>
 
 			<div class = "separate"></div>
 
 			<a href = "leaves.html"><div class = "button">
-				<center>  <font size = 5>Leaves</font>  </center>
+				<div class = "inButton"></div>
+				<center>  <font size = 4>Leaves</font>  </center>
 			</div></a>
 
 			<div class = "separate"></div>
 
 			<a href = "roots.html"><div class = "button">
-				<center> <font size = 5>Roots</font>  </center>
+				<div class = "inButton"></div>
+				<center> <font size = 4>Roots</font>  </center>
 			</div></a>
 
 			<div class = "separate"></div>
 
 			<a href = "tubers.html"><div class = "button">
-				<center> <font size = 5>Tubers</font>  </center>
+				<div class = "inButton"></div>
+				<center> <font size = 4>Tubers</font>  </center>
 			</div></a>
 
 			<div class = "separate"></div>
 
 			<a href = "contact_us.html"><div class = "button">
-				<center> <font size = 5>Contact Us</font>  </center>
+				<div class = "inButton"></div>
+				<center> <font size = 4>Contact Us</font>  </center>
 			</div></a>
+
+			<div class = "separate"></div>
+
+			<a href = "index.html"><div class = "button">
+				<div class = "inButton"></div>
+				<center> <font size = 4>Home</font>  </center>
+			</div></a>
+
+			<div class = "separate"></div>	
+
 		</div>
 
 		<!-- this is the center div -->
-		<div style = "background-color:#ffa366; height:520px; width:80%; float:left;">
+		<div style = "background-color:white; height:520px; width:80%; float:left;">
 			<div style = "height:100px; width:100%">
-				<center><br/><font size = 10> Contact Us </font></center>
+				<center><br/><font size = 10 class = "contactFonts"> Contact Us </font></center>
 			</div>
 			
 			<div style = "height:420px; width:50%; float:left">
 				<div style = "height:420px; width:30%; float:left">
 					</br>					
-					<font size = 4 style = "color:white"> First Name </font></br></br>
-					<font size = 4 style = "color:white"> Last Name </font></br></br>
-					<font size = 4 style = "color:white"> Email </font></br></br></br></br>
-					<font size = 4 style = "color:white"> Comment Box </font></br></br></br></br>
-						<input type = "radio" id = "radioQue" name = "group1" value = "question"><font size = 3 style = "color:white"> Question </font></br>
-						<input type = "radio" id = "radioPro" name = "group1" value = "problem"><font size = 3 style = "color:white"> Problem </font></br>
-						<input type = "radio" id = "radioOrd" name = "group1" value =><font size = 3 style = "color:white"> Order Status </font></br></br>
-					<input type = "submit" name = "submit" value = "Submit"/>
-					<input type = "button" id = "btnReset" name = "reset" value = "Reset"/>
+					<font size = 4 class = "contactFonts"> First Name </font></br></br>
+					<font size = 4 class = "contactFonts"> Last Name </font></br></br>
+					<font size = 4 class = "contactFonts"> Email </font></br></br></br></br>
+					<font size = 4 class = "contactFonts"> Comment Box </font></br></br></br></br>
+						<input type = "radio" id = "radioQue" name = "group1" value = "question"><font size = 3 class = "contactFonts"> Question </font></br>
+						<input type = "radio" id = "radioPro" name = "group1" value = "problem"><font size = 3 class = "contactFonts"> Problem </font></br>
+						<input type = "radio" id = "radioOrd" name = "group1" value =><font size = 3 class = "contactFonts"> Order Status </font></br></br>
+					<input type = "submit" name = "submit" value = "Submit" class = "btn"/>
+					<input type = "button" id = "btnReset" name = "reset" value = "Reset" class = "btn"/>
 				</div>
 
 				<div style = "height:420px; width:70%; float:left">
-					<input type = "text" id = "txtFirstName"  style = "padding-top:15px; background-color: rgba(0,0,0,0.1);; border:none; color:white"/></br></br>
-					<input type = "text" id = "txtLastName"  style = "padding-top:15px;  background-color: rgba(0,0,0,0.1);; border:none; color:white"/></br></br>
-					<input type = "text" id = "txtEmail"  style = "padding-top:15px;  background-color: rgba(0,0,0,0.1);; border:none; color:white" /></br>
-	
-					</br><textarea rows = "4" cols = "32" id = "txtComment" style = "padding-top:15px;  background-color: rgba(0,0,0,0.1); border:none; color:white" /></textarea>
+					<input type = "text" id = "txtFirstName" class = "txtFieldsContactUs"/></br></br>
+					<input type = "text" id = "txtLastName"  class = "txtFieldsContactUs"/></br></br>
+					<input type = "text" id = "txtEmail"  class = "txtFieldsContactUs" /></br></br>
+					<textarea rows = "4" cols = "35" id = "txtComment" class = "txtFieldsContactUs" /></textarea>
 				</div>
 			</div>
 
@@ -109,8 +126,8 @@
 				</br></br>
 				<div style = "height:150px; width:70%; float:left">
 					<br/><br/><br/>
-					<center><font size = 4 style = "color:white">We listen and we're here to help</font></br></center>
-					<center><font size = 4 style = "color:white">We'll contact you soon through your email</font></br></center>
+					<center><font size = 4 class = "contactFonts">We listen and we're here to help</font></br></center>
+					<center><font size = 4 class = "contactFonts">We'll contact you soon through your email</font></br></center>
 				</div>
 	
 				<div style = "height:150px; width:30%; float:left">
@@ -119,7 +136,6 @@
 			</div>
 		</div></br>
 
-			<center><a href = "index.html" >Home</a></center>
 
 		<script>
 			document.getElementById("btnReset").addEventListener("click", function(){
