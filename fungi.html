@@ -3,13 +3,19 @@
 	<head>
 		<title>VeggeOnline</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+			function dateAndTime(){
+			  document.getElementById("date").innerHTML = "Today is : " + Date();
+			}
+			dateTimer = setInterval(dateAndTime, 1000);
+		</script>
 	</head>
 
 	<body>
 		<!-- this is the title div -->
 		<div class = "header">
-		
-			<!-- this div is for displaying the title image -->			
+
+			<!-- this div is for displaying the title image -->
 			<div style = "float:left">
 				<img src = "images/title.png" class = "titleImage">
 			</div>
@@ -21,12 +27,12 @@
 
 		</div>
 
-		
+
 		<!-- this is the side pane -->
 		<div class = "leftNav">
-			
+
 			<div class = "spacing"></div>
-			<!-- this is spacing between the top and side pane -->			
+			<!-- this is spacing between the top and side pane -->
 			<div>
 				<center><img src = "images/menu.png" class = "titleImage"></center>
 			</div>
@@ -39,7 +45,7 @@
 				<div class = "inButton"></div>
 				<center><font size = 4>Bulbs</font></center>
 			</div></a>
-			
+
 			<div class = "separate"></div>
 
 			<a href = "fruit.html"><div class = "button">
@@ -141,7 +147,7 @@
 				    	<center><font size = 3>$88</font></center>
 				</div>
 			  </td>
-		
+
 			  <td>
 				<div class = "vegInfo">
 					<center><img src = "images/oyster.jpeg" class = "tableCellImage"></center></br>
@@ -153,6 +159,9 @@
 			</tr>
 
 		      </table></center>
+					<div id = "divDate">
+						<center><p id = "date"></p></center>
+					</div>
 		</div>
 
 
