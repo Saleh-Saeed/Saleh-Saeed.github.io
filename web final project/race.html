@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title> Car Racing Game </title>
+	</head>
+
+	<body style="background-image:url(background.jpg);">
+
+		<img id = "green" src = "green.png" style="position:absolute; top:100px; left:600px; height:100px; width:50px;">
+		<img id = "red" src = "red.png" style="position:absolute; top:100px; left:600px; height:100px; width:50px;" onclick="javascript:startGame()">
+		<img src = "road.png" style = "position:absolute; top:300px; left:50px; height:150px; width:1200px; opacity:0.8;" >
+		<img src = "finishline.png" style = "position:absolute; top:300px; left:50px; height:150px;">
+		<img src = "finishline.png" style = "position:absolute; top:300px; left:1250px; height:150px;">
+		<img id = "car1" src = "car1.png" style = "position:absolute; top:300px; left:50px; height:50px; width:110px;">
+		<img id = "car2" src = "car2.png" style = "position:absolute; top:350px; left:50px; height:50px; width:110px;">
+		<img id = "car3" src = "car3.png" style = "position:absolute; top:400px; left:50px; height:50px; width:110px;">
+		<img id = "result" src = "result.png" style = "position:absolute; top:200px; left:550px; height:150px; width:150px;" onclick="reset()">
+		<p id = "resMessage" style="position:absolute; top:300px; left:530px; font-weight:bold; font-size: 25px"></p>
+
+
+			<script>
+				var Interval = null;
+				document.getElementById("resMessage").style.visibility = "hidden";
+				document.getElementById("green").style.visibility = "hidden";
+				document.getElementById("result").style.visibility = "hidden";
+				function startGame(){
+					document.getElementById("green").style.visibility = "visible";
+					document.getElementById("red").style.visibility = "hidden";
+					moveCars();
+					interval = setInterval(moveCars, 10);
+				}
+
+				function reset(){
+					window.location.href = "race.html";
+				}
+
+				function moveCars(){
+					var speed1 = Math.random() * 10;
+					var speed2 = Math.random() * 10;
+					var speed3 = Math.random() * 10;
+					var p1 = parseInt(document.getElementById("car1").style.left.substr(0, document.getElementById("car1").style.left.length-2));
+					var p2 = parseInt(document.getElementById("car2").style.left.substr(0, document.getElementById("car2").style.left.length-2));
+					var p3 = parseInt(document.getElementById("car3").style.left.substr(0, document.getElementById("car3").style.left.length-2));
+					document.getElementById("car1").style.left = "" + (p1 + speed1) + "px";
+					document.getElementById("car2").style.left = "" + (p2 + speed2) + "px";
+					document.getElementById("car3").style.left = "" + (p3 + speed3) + "px";
+					if (p1 >= 1250 - 115){
+						document.getElementById("result").style.visibility = "visible";
+						clearInterval(interval);
+						document.getElementById("resMessage").style.visibility = "visible";
+						document.getElementById("resMessage").innerHTML = "Blue Car Wins";
+					}
+					if(p2 >= 1250 - 115) {
+						document.getElementById("result").style.visibility = "visible";
+						clearInterval(interval);
+						document.getElementById("resMessage").style.visibility = "visible";
+						document.getElementById("resMessage").innerHTML = "Orange Car Wins";
+					}
+					if (p3 >= 1250 - 115){
+						document.getElementById("result").style.visibility = "visible";
+						clearInterval(interval);
+						document.getElementById("resMessage").style.visibility = "visible";
+						document.getElementById("resMessage").innerHTML = "White Car Wins";
+					}
+				}
+			</script>
+	</body>
+</html>
